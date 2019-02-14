@@ -1,0 +1,412 @@
+* {
+    margin:0;
+    padding:0
+}
+a img, body, button, div, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, input, li, menu, ol, p, textarea, ul {
+    padding:0;
+    margin:0;
+    border:0
+}
+li, ol, ul {
+    list-style:none
+}
+input, select {
+    border:none;
+    outline:none;
+    width:200px;
+    height:36px;
+    background-color:#f0f0f0;
+    border-radius:6px;
+    text-indent:15px
+}
+input::-webkit-input-placeholder {
+    color:#aaaeb3
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.clear {
+    clear:both
+}
+.clearfix{zoom:1;}
+.clear{clear:both;height:0;overflow:hidden;}
+.show {
+    display:block
+}
+.hide {
+    display:none
+}
+.add-btn {
+    display:block;
+    width:92px;
+    height:36px;
+    /* background:url(../images/add.png) no-repeat 20px center #f38b0f; */
+    border-radius:6px;
+    font-size:14px;
+    color:#fff;
+    line-height:36px;
+    text-indent:45px
+}
+.two-set-btn {
+    width:356px;
+    height:35px;
+    margin:40px auto auto auto
+}
+.two-set-btn button {
+    font-size:18px;
+    width:120px;
+    background:#fff
+}
+.two-set-btn .pre-set-btn {
+    text-align:right;
+    /* background:url(../images/pre.png) no-repeat left center; */
+    background-size:22px 22px;
+    margin-right:20px
+}
+.two-set-btn .next-set-btn {
+    text-align:left;
+    /* background:url(../images/nextItem.png) no-repeat right center; */
+    background-size:22px 22px
+}
+body {
+    width:100%;
+    min-height:1080px;
+    background-color:#f6f6f6;
+    -webkit-text-size-adjust:none;
+    font-size:18px;
+    color:#393c40
+}
+body .content {
+    width:1420px;
+    padding-top:50px;
+    margin-left:400px
+}
+body .content .content-box {
+    width:100%;
+    background:#fff;
+    border-radius:8px;
+    border:solid 1px rgba(206, 206, 206, 0.46);
+    padding:25px 0px
+}
+body .content .content-box .content-box-title {
+    padding-left:30px;
+    margin-bottom:30px
+}
+body .content .content-title {
+    font-size:24px;
+    color:#acb0b5;
+    margin-bottom:50px
+}
+body .content .content-title span {
+    margin-right:50px
+}
+body .content .content-title .content-last-title {
+    color:#393c40;
+    border-bottom:1px solid #393c40;
+    cursor:pointer
+}
+body .content .config-flow {
+    overflow:hidden;
+    margin-bottom:35px
+}
+body .content .config-flow .config-step, body .content .config-flow .step-line {
+    float:left
+}
+body .content .config-flow .config-step div {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    text-align:center;
+    line-height:60px;
+    font-size:36px;
+    background:#eaeaea;
+    color:#acb0b5
+}
+body .content .config-flow .config-step .currentStep {
+    color:#fff;
+    background:-webkit-linear-gradient(left, #4900e0, #8527d6);
+    background:-o-linear-gradient(right, #4900e0, #8527d6);
+    background:-moz-linear-gradient(right, #4900e0, #8527d6);
+    background:linear-gradient(to right, #4900e0, #8527d6)
+}
+body .content .config-flow .config-step p {
+    margin-top:10px;
+    text-align:center
+}
+body .content .config-flow .step-line {
+    width:365px;
+    height:4px;
+    background:#d7d7d7;
+    border-radius:2px;
+    margin:28px 10px 28px 0px
+}
+body .content .config-flow .stepLineActive {
+    background:#5003e0
+}
+body .content .step-btn {
+    width:100%;
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:50px
+}
+body .content .step-btn button {
+    width:200px;
+    height:60px;
+    background-image:linear-gradient(42deg, #4900e0 0%, #8d2de2 100%);
+    border-radius:5px;
+    font-size:24px;
+    color:#fff
+}
+body .content .step-btn .next-btn {
+    margin-left:50px
+}
+.left-menu {
+    z-index:99;
+    position:fixed;
+    left:0;
+    top:0;
+    float:left;
+    width:335px;
+    height:100%;
+    background:url(../images/images/background.png) no-repeat center;
+    background-size:100% 100%;
+    padding:35px 0 20px 30px;
+    color:#fff
+}
+.left-menu .logo {
+    width:100%;
+    height:65px;
+    background:url(../images/images/logo.png) no-repeat left center
+}
+.left-menu .menu-list {
+    width:215px;
+    margin-top:45px;
+    max-height:780px;
+    overflow-y:auto
+}
+.left-menu .menu-list .menu-list-item {
+    margin-left:15px;
+    margin-bottom:30px
+}
+.left-menu .menu-list .menu-list-item .menu-list-title {
+    padding:10px 0 5px 0;
+    position:relative;
+    cursor:pointer
+}
+.left-menu .menu-list .menu-list-item .menu-list-title .icon-myActive {
+    display:inline-block;
+    vertical-align: middle;
+    /* position:absolute; */
+    /* width:22px;
+    height:22px;
+    left:10px; */
+    /* background:url(../images/myActive.png) no-repeat center; */
+    /* background-size:100% 100% */
+}
+/* .left-menu .menu-list .menu-list-item .menu-list-title .iconKehu {
+    background:url(../images/kehu.png) no-repeat center;
+    background-size:100% 100%
+}
+.left-menu .menu-list .menu-list-item .menu-list-title .iconUser {
+    background:url(../images/user.png) no-repeat center;
+    background-size:100% 100%
+} */
+.left-menu .menu-list .menu-list-item .menu-list-title .news-num {
+    position:relative;
+    vertical-align:middle;
+    margin-right: 35px;
+    margin-left: 9px;
+}
+.left-menu .menu-list .menu-list-item .menu-list-title .news-num a {
+    position:absolute;
+    display:block;
+    text-align:center;
+    line-height:18px;
+    width:18px;
+    height:18px;
+    background:#e96262;
+    border-radius:50%;
+    right:-16px;
+    top:-10px;
+    font-size:14px
+}
+.left-menu .menu-list .menu-list-item .menu-list-title .icon-next { 
+    /* display:block;
+    position:absolute;
+    width:14px;
+    height:19px;
+    right:20px;
+    bottom:5px;
+    background:url(../images/jiantou.png) no-repeat center;
+    background-size:100% 100% */
+    vertical-align: middle;
+} 
+.left-menu .menu-list .menu-list-item .menu-list-title .iconNextOpen {
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    vertical-align: middle;
+}
+.left-menu .menu-list .menu-list-item .slide-fade-enter-active {
+    transition:all 0.8s cubic-bezier(1, 0.5, 0.8, 1)
+}
+.left-menu .menu-list .menu-list-item .slide-fade-leave-active {
+    transition:all .8s ease
+}
+.left-menu .menu-list .menu-list-item .slide-fade-enter, .left-menu .menu-list .menu-list-item .slide-fade-leave-to {
+    transform:translateY(10px);
+    opacity:0
+}
+.left-menu .menu-list .menu-list-item .ttitleLine {
+    border-bottom:2px #7b73ed solid
+}
+.left-menu .menu-list .menu-list-item .nextMenu {
+    padding-left:40px
+}
+.left-menu .menu-list .menu-list-item .nextMenu li {
+    cursor:pointer;
+    margin-top:20px;
+    font-size:16px
+}
+.left-menu .menu-list::-webkit-scrollbar {
+    width:10px
+}
+.left-menu .menu-list::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px transparent;
+    border-radius:10px;
+    background-color:#fff
+}
+.left-menu .menu-list::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    -webkit-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color:#dbcffe
+}
+.left-menu .persersonal {
+    position:absolute;
+    bottom:30px
+}
+/* .left-menu .persersonal .person-name {
+    cursor:pointer;
+    height:50px
+}
+.left-menu .persersonal .person-name div {
+    width:50px;
+    height:50px;
+    background:#fff;
+    border-radius:50%;
+    float:left
+}
+.left-menu .persersonal .person-name div img {
+    width:100%;
+    height:100%;
+    display:block
+}
+.left-menu .persersonal .person-name span {
+    display:block;
+    float:left;
+    padding-top:10px;
+    padding-left:10px
+} */
+.left-menu .persersonal .set-btn {
+    padding-left:25px;
+    /* background:url(../images/set.png) no-repeat left center; */
+    background-size:21px 21px;
+    line-height:40px;
+    margin-top:5px;
+    margin-left:65px;
+    cursor:pointer
+}
+.dialog-bg {
+    height:100%;
+    width:100%;
+    background:rgba(0, 0, 0, 0.5);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:999
+}
+.dialog-bg .dialog-box {
+    width:880px;
+    height:220px;
+    background-color:#ffffff;
+    border-radius:16px;
+    margin:400px auto auto auto;
+    padding-top:100px;
+    position:relative
+}
+.dialog-bg .dialog-box .dialog-close {
+    display:block;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    position:absolute;
+    right:10px;
+    top:10px;
+    cursor:pointer
+}
+.dialog-bg .dialog-box .dialog-content {
+    width:300px;
+    height:40px;
+    margin:0 auto
+}
+.dialog-bg .dialog-box .dialog-content select {
+    height:40px;
+    width:160px;
+    text-indent:15px
+}
+.dialog-bg .dialog-box .dialog-button {
+    text-align:center;
+    margin-top:90px
+}
+.dialog-bg .dialog-box .dialog-button button {
+    width:135px;
+    height:50px;
+    background-color:#c3c3c3;
+    border-radius:5px;
+    color:#fff;
+    cursor:pointer
+}
+.dialog-bg .dialog-box .dialog-button .confirm-btn {
+    background-image:linear-gradient(42deg, #4900e0 0%, #8d2de2 100%)
+}
+.pageBox {
+    width:450px;
+    height:30px;
+    margin:0 auto;
+    font-size:12px;
+    margin-bottom:30px
+}
+.pageBox select {
+    display:inline-block;
+    width:70px;
+    height:24px;
+    border-radius:4px;
+    border:solid 1px #d3d3d3;
+    text-indent:10px;
+    margin-right:10px
+}
+.pageBox input {
+    display:inline-block;
+    width:40px;
+    height:24px;
+    border-radius:4px;
+    border:solid 1px #d3d3d3;
+    text-align:center
+}
+.pageBox span {
+    display:inline-block;
+    padding:3px 5px;
+    background:#eaeaea
+}
+.pageBox .firstPage, .pageBox .preNext, .pageBox .nextPage, .pageBox .lastpage {
+    margin-right:10px
+}
+.pageBox .pageNo {
+    background:#f6f6f6
+}
